@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>聚知行实业有限公司</title>
+	<link rel="stylesheet" href="Style.css" type="text/css">
+</head>
+
+<body marginwidth="0" topmargin="0" bottommargin="0" style="background-color: #000000">
+	<!--标题栏-->
+	<table width="100%" style="background-color: #232323">
+		<tr>
+			<td width="10px"></td>
+		  	<td width="50px">
+				<img src="Logo.png" alt="Logo" height="50px"> <!-- Drag your PNG-Formatted Logo Into the root folder and remane it to Logo.png, the height should be 50px -->
+			</td>
+			<td width="50%" align="left">
+				<p class="TitleCaption" align="left">河南聚知行实业有限公司</p>
+			</td>
+			<td class="TitleRow">
+				<p class="TitleCaption" align="center">软件</p>
+			</td>
+			<td class="TitleRow">
+				<p class="TitleCaption" align="center">包材</p>
+			</td>
+			<td class="TitleRow">
+				<p class="TitleCaption" align="center">仓储代管</p>
+			</td>
+		</tr>
+	</table>
+	<!--首页图片与视觉-->
+	<div id="visualDiv">
+		<!--此处为图片部分-->
+		<div hidden class="VisualCoreDiv"> <!--最右边的图片，处于最底层-->
+			<img src="Resource Image/T1.jpg" width="100%" alt="输入图片描述" id="T1">
+		</div>
+		<div class="VisualCoreDiv"> <!--最左边的图片，处于中间层-->
+			<img src="Resource Image/T2.jpg" width="100%" alt="输入图片描述" id="T2">
+		</div>
+		<div class="VisualCoreDiv"> <!--中间的图片，处于最高层-->
+			<img src="Resource Image/T3.jpg" width="100%" alt="输入图片描述" id="T3">
+		</div>
+		<div class="VisualCoreDiv" style="opacity:0.3; width: 100%"> <!--中间的图片，处于最高层-->
+			<img src="MaskImage.png" width="100%" height="100%" alt="输入图片描述">
+		</div>
+		<!--此处为进度条-->
+		<div style="position: absolute; width: 100%; height: 100%" id="ProgressBar_Bg">
+			<table width="100%" style="padding: 30px; align-content: flex-end; height:100%">
+				<tr height="100%" align="right" style="overflow: hidden;background: 000000">
+					<td width="70%"></td>
+					<td width="15px" style="opacity: 0.6" valign="top">
+						<img src="MaskImage.png" width="15px" height="80%">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="position: absolute; width: 100%; height: 100%" id="ProgressBar_Fg">
+			<table width="100%" style="padding: 30px; align-content: flex-end; height:100%">
+				<tr height="100%" align="right" style="overflow: hidden;background: 000000">
+					<td width="70%"></td>
+					<td width="15px" style="opacity: 0.9" valign="top">
+						<img src="SliderImage.png" width="15px" height="100%" id="ProgressSlider">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--此处为访问网站的按钮-->
+		<div style="position: absolute; width: 100%; height: 100%" id="Button">
+			<table width="100%" style="padding-right: 30px; align-content: flex-end; height:100%">
+				<tr height="100%" align="right" style="overflow: hidden;background: 000000">
+					<td width="70%"></td>
+					<td width="15px" valign="bottom">
+						<p class="TitleCaption" id="GotoBtn" align="center">访问网站</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--此处为首页Section标题-->
+		<div style="position: absolute; display: table; height: 100%; width: 100%; overflow: hidden">
+			<table height="100%" width="100%">
+				<!--<tr height="90%"></tr>-->
+				<tr style="height:20px">
+					<td width="33%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left">仓储管理</p>
+					</td>
+					<td width="33%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left">POS系统</p>
+					</td>
+					<td width="33%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left">物流与货运</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--详情页标题-->
+		<div style="position: absolute; display: table; height: 100%; width: 100%; overflow: hidden" hidden>
+			<table height="100%" width="100%">
+				<!--<tr height="90%"></tr>-->
+				<tr style="height:20px">
+					<td width="33%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left" >仓储管理</p>
+						<p class="TitleName" id="T1_2">条码系统</p>
+						<p class="TitleName" id="T1_3">动态开单</p>
+					</td>
+					<td width="33%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left">POS系统</p>
+						<p class="TitleName" id="T2_2">货物管理</p>
+					</td>
+					<td width="33%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left">物流与货运</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--详情页内容-->
+		<div style="position: absolute; display: table; height: 100%; width: 100%; overflow: hidden" hidden>
+			<table height="100%" width="100%">
+				<!--<tr height="90%"></tr>-->
+				<tr style="height:20px">
+					<td width="18%" class="CaptionCell" valign="top">
+						<p class="TitleName" align="left" >仓储管理</p>
+					</td>
+					<td width="66%" class="CaptionCell" valign="top" style="padding-top: 30px; padding-right: 200px">
+						<p hidden class="TitleNote" style="line-height: 150%; font-size: 19px">此处是仓储管理系统的详情介绍页，根据长度我们会调整其宽度，不过可以多写,填满整个文章会比较有使用美感：春江潮水连海平，海上明月共潮生，滟滟随波千万里，何处春江无月明，江流宛转绕芳甸，月照花林皆似霰，空里流霜不觉飞，汀上白沙看不见，江天一色无纤尘，皎皎空中孤月轮，江畔何人初见月，江月何年初照人</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!--页脚-->
+	<table height="50px" width="100%" bgcolor="#232323">
+		<tr>
+				<p class="BottomTextDiv" align="center">©2019 聚知行实业有限公司</p>
+				<p class="BottomTextDiv" align="center">保留所有权力</p>	
+		</tr>
+	</table>
+</body>
+</html>
+
+

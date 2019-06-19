@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body { 
+    height: 100%; 
+	min-height: 500px;
+	min-width: 1024px;
+} 
+
+#visualDiv {
+	height: 90%;
+	position: relative;
+	width: 100%;
+	align-content: center; 
+	overflow: hidden;
+}
+
+@keyframes BtnAnimation {
+	0% {
+		width: 100px;
+		height: 24px;
+	}
+	50% {
+		width: 120px;
+		height: 24px;
+	}
+	100% {
+		width: 100px;
+		height: 24px;
+	}
+}
+
+#GotoBtn {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: black;
+	background: #F2F2F2;
+	opacity: 0.9;
+	width: 100px; 
+	height: 24px; 
+	vertical-align: middle; 
+	padding: 12px; 
+	border-radius: 24px;
+	border: thick;
+	border-width: thick;
+	border-color: black;
+	animation: BtnAnimation 6s infinite;
+}
+
+.TitleCaption {
+	align-content: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: aliceblue;
+}
+
+.TitleRow {
+	align-content: center;
+	width: 120px;
+}
+
+.O3Image {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.CenteredImage {
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@keyframes T3Animation {
+	0% {
+		clip-path: polygon(33% 0, 33% 100%, 66% 100%, 66% 0);
+	}
+	100% {
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	}
+}
+
+#T3 {
+	clip-path:polygon(33% 0, 33% 100%, 66% 100%, 66% 0);
+	animation: T3Animation 2s;
+}
+
+@keyframes T2Animation {
+	0% {
+		clip-path: polygon(0 0, 0 100%, 33% 100%, 33% 0);
+	}
+	100% {
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	}
+}
+
+#T2 {
+	clip-path:polygon(0 0, 0 100%, 33% 100%, 33% 0);
+	animation: T2Animation 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes T1Animation {
+	0% {
+		clip-path: polygon(66% 0, 66% 100%, 100% 100%, 100% 0);
+	}
+	100% {
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	}
+}
+
+#T1 {
+	clip-path: polygon(66% 0, 66% 100%, 100% 100%, 100% 0);
+	animation: T1Animation 2s;
+}
+
+.BottomTextDiv {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 14px;
+	align-content: center;
+	color: azure
+}
+
+@keyframes SliderDown{
+	0% {
+		clip-path: polygon(0% 0%, 0% 10%, 100% 10%, 100% 0%);
+	}
+	14% {
+		clip-path: polygon(0% 10%, 0% 20%, 100% 20%, 100% 10%);
+	}
+	29% {
+		clip-path: polygon(0% 20%, 0% 30%, 100% 30%, 100% 20%);
+	}
+	43% {
+		clip-path: polygon(0% 30%, 0% 40%, 100% 40%, 100% 30%);
+	}
+	57% {
+		clip-path: polygon(0% 40%, 0% 50%, 100% 50%, 100% 40%);
+	}
+	71% {
+		clip-path: polygon(0% 50%, 0% 60%, 100% 60%, 100% 50%);
+	}
+	86% {
+		clip-path: polygon(0% 60%, 0% 70%, 100% 70%, 100% 60%);
+	}
+	100% {
+		clip-path: polygon(0% 70%, 0% 80%, 100% 80%, 100% 70%);
+	}
+}
+
+#ProgressSlider{
+	clip-path: polygon(0% 0%, 0% 10%, 100% 10%, 100% 0%);
+	animation: SliderDown 4s;
+	
+}
+
+.TitleName {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: aliceblue;
+	font-size: 40px;
+	padding: 0px;
+}
+
+.CaptionCell {
+	margin:10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.TitleNote {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	color: aliceblue;
+	font-size: 15px;
+}
+
+.VisualCoreDiv {
+	position: absolute;
+	display: table;
+}
+
+#T1_1 {
+	opacity: 1;
+}
+
+#T1_2 {
+	opacity: 0.5;
+}
+
+#T1_3 {
+	opacity: 0.5;
+}
+
+#T2_2 {
+	opacity: 0.5
+}
