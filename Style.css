@@ -79,10 +79,21 @@ html, body {
 	}
 }
 
+@keyframes T3AnimationBack {
+	0% {
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+		-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	}
+	100% {
+		clip-path: polygon(33% 0, 33% 100%, 66% 100%, 66% 0);
+		-webkit-clip-path: polygon(33% 0, 33% 100%, 66% 100%, 66% 0);
+	}
+}
+
 #T3 {
 	clip-path:polygon(33% 0, 33% 100%, 66% 100%, 66% 0);
 	-webkit-clip-path:polygon(33% 0, 33% 100%, 66% 100%, 66% 0);
-	animation: T3Animation 2s;
+	/*animation: T3Animation 2s;*/
 }
 
 @keyframes T2Animation {
@@ -96,11 +107,26 @@ html, body {
 	}
 }
 
+@keyframes T2AnimationBack {
+	0% {
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+		-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	}
+	100% {
+		clip-path: polygon(0 0, 0 100%, 33% 100%, 33% 0);
+		-webkit-clip-path: polygon(0 0, 0 100%, 33% 100%, 33% 0);
+	}
+}
+
 #T2 {
 	clip-path:polygon(0 0, 0 100%, 33% 100%, 33% 0);
 	-webkit-clip-path:polygon(0 0, 0 100%, 33% 100%, 33% 0);
+	/*animation: T2Animation 2s;
+	animation-fill-mode: forwards;*/
+}
+
+.T2A {
 	animation: T2Animation 2s;
-	animation-fill-mode: forwards;
 }
 
 @keyframes T1Animation {
@@ -114,10 +140,21 @@ html, body {
 	}
 }
 
+@keyframes T1AnimationBack {
+	0% {
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+		-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+	}
+	100% {
+		clip-path: polygon(66% 0, 66% 100%, 100% 100%, 100% 0);
+		-webkit-clip-path: polygon(66% 0, 66% 100%, 100% 100%, 100% 0);
+	}
+}
+
 #T1 {
 	clip-path: polygon(66% 0, 66% 100%, 100% 100%, 100% 0);
 	-webkit-clip-path: polygon(66% 0, 66% 100%, 100% 100%, 100% 0);
-	animation: T1Animation 2s;
+	/*animation: T1Animation 2s;*/
 }
 
 .BottomTextDiv {
@@ -207,5 +244,5 @@ html, body {
 }
 
 #T2_2 {
-	opacity: 0.5
+	opacity: 0.5;
 }
