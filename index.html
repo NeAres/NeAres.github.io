@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>聚知行实业有限公司</title>
 	<link rel="stylesheet" href="Style.css" type="text/css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="Logo.png">
 </head>
 
 <body marginwidth="0" topmargin="0" bottommargin="0" style="background-color: #000000">
@@ -16,15 +18,15 @@
 				<img src="Logo.png" alt="Logo" height="50px"> <!-- Drag your PNG-Formatted Logo Into the root folder and remane it to Logo.png, the height should be 50px -->
 			</td>
 			<td width="50%" align="left">
-				<p class="TitleCaption" align="left">河南聚知行实业有限公司</p>
+				<a href="http://www.jzhang.net.cn/" style="text-decoration: none"><p class="TitleCaption" align="left">河南聚知行实业有限公司</p></a>
 			</td>
-			<td class="TitleRow">
+			<td class="TitleRow" onClick="animationT2expand('T2')">
 				<p class="TitleCaption" align="center">软件</p>
 			</td>
-			<td class="TitleRow">
+			<td class="TitleRow" onClick="animationT3expand('T3')">
 				<p class="TitleCaption" align="center">包材</p>
 			</td>
-			<td class="TitleRow">
+			<td class="TitleRow" onClick="animationT1expand('T1')">
 				<p class="TitleCaption" align="center">仓储代管</p>
 			</td>
 		</tr>
@@ -33,18 +35,18 @@
 	<div id="visualDiv">
 		<!--此处为图片部分-->
 		<div class="VisualCoreDiv"> <!--最左边的图片，处于最底层层-->
-			<img src="Resource Image/T2.jpg" width="100%" alt="输入图片描述" id="T2">
+			<img src="Resource Image/T2/1.jpg" width="100%" alt="输入图片描述" id="T2">
 		</div>
 		<div hidden class="VisualCoreDiv"> <!--最右边的图片，处于中间层-->
-			<img src="Resource Image/T1.jpg" width="100%" alt="输入图片描述" id="T1">
+			<img src="Resource Image/T1/1.jpg" width="100%" alt="输入图片描述" id="T1">
 		</div>
 		<div class="VisualCoreDiv"> <!--中间的图片，处于最高层-->
-			<img src="Resource Image/T3.jpg" width="100%" alt="输入图片描述" id="T3">
+			<img src="Resource Image/T3/1.jpg" width="100%" alt="输入图片描述" id="T3">
 		</div>
 		<div class="VisualCoreDiv" style="opacity:0.3; width: 100%"> <!--中间的图片，处于最高层-->
 			<img src="MaskImage.png" width="100%" height="100%" alt="输入图片描述">
 		</div>
-		<!--此处为进度条-->
+		<!--此处为进度条，暂时屏蔽
 		<div style="position: absolute; width: 100%; height: 100%" id="ProgressBar_Bg">
 			<table width="100%" style="padding: 30px; align-content: flex-end; height:100%">
 				<tr height="100%" align="right" style="overflow: hidden;background: 000000">
@@ -64,9 +66,9 @@
 					</td>
 				</tr>
 			</table>
-		</div>
+		</div>-->
 		
-		<!--此处为首页Section标题, id为TT-->
+		<!--此处为首页Section标题与文字	, id为TT-->
 		<div style="position: absolute; display: table; height: 100%; width: 100%; overflow: hidden">
 			<table height="100%" width="100%" id="TT">
 				<!--<tr height="90%"></tr>-->
@@ -79,6 +81,17 @@
 					</td>
 					<td width="33%" class="CaptionCell" valign="top">
 						<p class="TitleName" align="left" id="T3T">仓储</p> <!--ノ(T3T)ノ⊥⊥-->
+					</td>
+				</tr>
+				<tr valign="top">
+					<td class="CaptionCell" width="33%">
+						<p class="TitleNote" align="justify" style="margin-right: 10px">请在此处介绍软件系统，这是一个粗略的介绍，其长度无需过长，但是可以给顾客一个基本的印象会比较好，这个部分是写死在代码里面的，请直接在此处更改</p>
+					</td>
+					<td class="CaptionCell" width="33%">
+						<p class="TitleNote" align="justify" style="margin-right: 10px">请在此处介绍包材业务，这是一个粗略的介绍，其长度无需过长，但是可以给顾客一个基本的印象会比较好，这个部分是写死在代码里面的，请直接在此处更改</p>
+					</td>
+					<td class="CaptionCell" width="33%">
+						<p class="TitleNote" align="justify" style="margin-right: 10px">请在此处介绍仓储系统，这是一个粗略的介绍，其长度无需过长，但是可以给顾客一个基本的印象会比较好，这个部分是写死在代码里面的，请直接在此处更改</p>
 					</td>
 				</tr>
 			</table>
