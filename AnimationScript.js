@@ -1,7 +1,7 @@
 // JavaScript Document
 var expandedMenu = 0;
 var TArray = ["T1","T2","T3"];
-var TitleCall = {"T2":["物流软件","固定资产","MES系统"],"T3":["气泡柱","气枕","纸箱"],"T1":["仓储管理软件","仓储代管"," "]};
+var TitleCall = {"T2":["物流软件","MES系统","固定资产"],"T3":["气泡柱","气枕","纸箱"],"T1":["仓储管理软件","仓储代管"," "]};
 var Flag=0;
 // 0 Means Index Page, 1 means software system, 2 means wrapping services, 3 means storage system
 var intervalT1 = 1;
@@ -108,9 +108,9 @@ function animationT2expand(TAT) {
 	}
 	Array.push("TT")
 	var nameArray = TitleCall.T2;
-	document.getElementById("T1_1").innerHTML = nameArray[1];
-	document.getElementById("T1_2").innerHTML = nameArray[2];
-	document.getElementById("T1_3").innerHTML = nameArray[0];
+	document.getElementById("T1_1").innerHTML = nameArray[0];
+	document.getElementById("T1_2").innerHTML = nameArray[1];
+	document.getElementById("T1_3").innerHTML = nameArray[2];
 	document.getElementById("CaptionContent").innerHTML = CaptionCallT2[intervalT2-1];
 	if(expandedMenu==2){
 		expandedMenu=0;

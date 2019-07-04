@@ -15,6 +15,11 @@ html, body {
 	overflow: hidden;
 }
 
+.TB:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
 @keyframes BtnAnimation {
 	0% {
 		width: 100px;
