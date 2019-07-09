@@ -1,7 +1,7 @@
 // JavaScript Document
 var expandedMenu = 0;
 var TArray = ["T1","T2","T3"];
-var TitleCall = {"T2":["物流软件","MES系统","固定资产"],"T3":["气泡柱","气枕","纸箱"],"T1":["仓储管理软件","仓储代管"," "]};
+var TitleCall = {"T2":["物流软件","MES系统","固定资产"],"T3":["气泡柱","气枕","纸箱"],"T1":["仓储管理软件","仓储运营"," "]};
 var Flag=0;
 // 0 Means Index Page, 1 means software system, 2 means wrapping services, 3 means storage system
 var intervalT1 = 1;
